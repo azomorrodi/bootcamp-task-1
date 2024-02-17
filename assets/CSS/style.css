@@ -1,0 +1,140 @@
+/* Reset  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root variable */
+:root {
+  --color-body: #333333;
+  --color--white: #fff;
+  --color--badge: #219f95;
+  --color--badge-light: #afcedd;
+  --color-button: #219f95;
+  --color-font: #1e1e1e;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  color: var(--color-body);
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+/* buttons */
+.btn {
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  background-color: var(--color--badge);
+  color: var(--color--white);
+  align-items: baseline;
+}
+.btn--block {
+  width: 170px;
+  height: 65px;
+  font-size: 1.8rem;
+}
+
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 1.7rem 2.4rem;
+  background-color: var(--color--badge-light);
+  border-radius: 8px;
+  color: var(--color--badge);
+  font-weight: bold;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.8rem;
+  }
+}
+
+/*PLAN*/
+.heading {
+  margin: 4rem;
+  font-size: 2.2rem;
+}
+.block-plan {
+  display: grid;
+  gap: 2rem 3rem;
+  margin: 2rem;
+}
+.plan {
+  max-width: 500px;
+  
+}
+.plan__section-1,
+.plan__section-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.plan__section-2 {
+  display: grid;
+  padding: 1rem;
+}
+.plan_name {
+  font-size: 1.8rem;
+}
+.plan_request {
+  font-size: 2.7rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  color: var(--color-font);
+  word-wrap: nowrap;
+}
+.plan_request-id {
+  font-size: 1.2rem;
+}
+.plan_request-name {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--color-font);
+  white-space: nowrap;
+}
+.plan-date {
+  font-size: 1.2rem;
+}
+.plan_image {
+  width: 45px;
+  height: 45px;
+ 
+}
+.card {
+  border-radius: 2px;
+
+  padding: 1rem;
+}
+
+
+
+@media screen and (min-width: 856px) {
+  .block-plan {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .block-plan {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

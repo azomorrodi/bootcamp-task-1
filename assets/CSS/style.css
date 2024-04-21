@@ -60,13 +60,6 @@ body {
   width: 60px;
   height: 60px;
 }
-
-@media screen and (min-width: 1024px) {
-  .badge {
-    font-size: 1.8rem;
-  }
-}
-
 /*PLAN*/
 .heading {
   margin: 4rem;
@@ -136,5 +129,8 @@ body {
 @media screen and (min-width: 1280px) {
   .block-plan {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .badge {
+    font-size: 1.8rem;
   }
 }
